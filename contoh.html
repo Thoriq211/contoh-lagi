@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Semangat Icaa!</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      font-family: 'Georgia', serif;
+      color: #b30059;
+      text-align: center;
+      padding: 50px;
+      overflow: hidden;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #fff0f5;
+      padding: 20px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+ img {
+      border-radius: 20px;
+      border: 4px solid #ff99cc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 90%;
+      height: auto;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      animation: floatUp 5s linear infinite;
+      color: #ff66b2;
+      opacity: 0.8;
+    }
+
+@keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-600px) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <p>Semangat yaa icaa cantikkk buat besok ujian nyaa 💖</p><br>
+  <img src="WhatsApp Image 2025-06-10 at 19.13.26_b213b5c6.jpg" alt="Foto Ica" width="200">
+
+ <!-- Emoji hati berterbangan -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = '💗';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = Math.random() * 100 + 'vh';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+</body>
+</html>
